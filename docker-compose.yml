@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  rust:
+    build:
+      context: .
+      args:
+        host_uid: $CUID
+        host_gid: $CGID
+        user: $CU
+        group: $CG
+    tty: true
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
