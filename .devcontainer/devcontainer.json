@@ -5,6 +5,7 @@
     ],
     "service": "rust",
     "workspaceFolder": "/workspace",
+    "initializeCommand": "bash init.sh",
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
         "rust-analyzer.checkOnSave.command": "clippy"
