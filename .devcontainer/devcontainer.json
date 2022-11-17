@@ -8,12 +8,13 @@
     "initializeCommand": "bash init.sh",
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
-        "rust-analyzer.checkOnSave.command": "clippy"
-    },
-    // Add the IDs of extensions you want installed when the container is created.
+        "rust-analyzer.checkOnSave.command": "clippy",
+        "[rust]": {
+            "editor.formatOnSave": true
+        }    },
     "extensions": [
         "editorconfig.editorconfig",
-        "matklad.rust-analyzer",
+        "rust-lang.rust-analyzer",
         "vadimcn.vscode-lldb",
         "bungcip.better-toml",
         "serayuzgur.crates"
